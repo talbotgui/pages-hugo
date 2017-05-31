@@ -1,0 +1,1 @@
+kill -TERM `ps -ef | grep hugo | grep theme | awk '{print \$2}'` || true

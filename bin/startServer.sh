@@ -1,0 +1,1 @@
+nohup hugo serve -w --disableLiveReload --bind "0.0.0.0" -t hugo-theme-learn >log.log &

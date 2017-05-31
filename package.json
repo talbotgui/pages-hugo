@@ -1,0 +1,15 @@
+{
+	"name": "emedia",
+	"version": "0.1.0",
+	"scripts": {
+		"serve": "./hugo serve --bind 0.0.0.0",
+		"serve-win": "hugo.exe serve --bind 0.0.0.0",
+		"build": "./hugo",
+		"build-win": "hugo.exe",
+		"index": "lunr-hugo -i \"docs/**/*.md\" -o static/json/search.json -l yaml"
+	},
+	"dependencies": {
+		"lunr-hugo": "0.1.2"
+	}
+}
+

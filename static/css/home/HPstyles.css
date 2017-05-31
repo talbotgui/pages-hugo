@@ -1,0 +1,262 @@
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin', "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+body {
+
+    font-family: 'Arbutus Slab', "Helvetica Neue", "Helvetica", sans-serif !important;
+    line-height: 1.6;
+}
+
+.vert-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* Full Page Image Header Area */
+
+.header {
+    display: table;
+    height: 70%;
+    width: 100%;
+    min-height: 70%;
+    position: relative;
+    /*background: url(../../images/fond00.jpg) no-repeat center center fixed;*/
+	/*background: url(../../images/fond01.jpg) no-repeat center -500px fixed;*/
+	/*background: url(../../images/fond02.jpg) no-repeat center center fixed;*/
+	/*background: url(../../images/fond03.jpg) no-repeat center center fixed;*/
+	/*background: url(../../images/fond04.jpg) no-repeat center -250px fixed;*/
+	background: url(../../images/fond05.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 99999;
+    background-color: black;
+}
+
+.logo {
+    max-width: 35em;
+    width: 100%;
+    padding: 2em;
+}
+
+.buttonbox {
+    margin: 2em 0 4em;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+{
+    .header {
+        display: table;
+        height: 70%;
+        width: 100%;
+        position: relative;
+        background: url(../../images/desk-mini.jpg) no-repeat;
+        background-size: 100% 100%;
+        z-index: 99999;
+        background-color: black;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .header {
+        display: table;
+        height: 70%;
+        width: 100%;
+        position: relative;
+        background: url(../../images/desk-long.jpg) no-repeat;
+        background-size: 100% 100%;
+        z-index: 99999;
+        background-color: black;
+    }
+}
+
+.header .btn {
+    margin: 10px;
+}
+
+#main {
+    z-index: 99999;
+    position: relative;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header .btn {
+    font-weight: 100;
+}
+
+/* Intro */
+
+.counterpoint {
+    padding: 50px 0;
+    background-color: rgb(242, 242, 242);
+}
+
+.point {
+    background: rgb(210,0,33);
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+
+.point h2, .counterpoint h2 {
+    font-size: 32pt;
+    line-height: 1.7;
+}
+
+i.callout-icon, i.point-icon, i.lead-icon, i.tech-icon {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+i.lead-icon {
+    border: 3px solid #222;
+}
+
+i.tech-icon {
+  border: 3px solid #D0D0D0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+i.point-icon, i.callout-icon {
+    border: 3px solid #ffffff;
+}
+
+i.lead-icon:hover {
+    color: #fff;
+    border: 3px solid black;
+    background: black;
+}
+
+i.tech-icon:hover {
+  background: #fff;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+i.point-icon:hover {
+    color: rgb(210,0,33);
+    border: 3px solid #fff;
+    background: #fff;
+}
+
+a:hover {
+    color: rgb(52, 73, 94);
+}
+
+.icon-2x {
+    font-size: 200%;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.19);
+    padding: 50px 0;
+
+}
+
+#action {
+    background: url(../../images/gray.png);
+    padding: 30px 0px 40px;
+    width: 100%;
+}
+#action pre {
+    background-color: #545454;
+    color: #f9f2f4;
+}
+#action pre:hover {
+    background-color: #f9f2f4;
+    color: #545454;
+}
+#action code {
+    font-size: 14pt;
+}
+
+#footer {
+    font-size: 14px;
+    padding: 50px 0px 25px 0px;
+    background: rgb(255, 255, 255);
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.point a {
+    color: white;
+    border-bottom: 1px dotted white;
+}
+
+.point a:hover {
+    border-bottom: 1px solid white;
+    text-decoration : none;
+}
+
+.counterpoint a {
+    color: rgb(65,115,140);
+}
+
+/* Bootstrap Addons */
+
+.btn-dark {
+    color:white;
+    background-color: rgba(30,30,30, 0.8);
+    border-color: black;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: black;
+    background-color: aliceblue;
+    border-color: black;
+}
+
+.btn-info:hover, .btn-primary:hover, .btn-success:hover {
+    background: aliceblue;
+}
