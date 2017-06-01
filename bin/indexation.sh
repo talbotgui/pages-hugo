@@ -1,1 +1,0 @@
-../node_modules/.bin/hugo-lunr -i "../docs/**/*.md" -o "../static/json/search.json" -l yaml

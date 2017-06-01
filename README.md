@@ -8,8 +8,7 @@ Il suffit de démarrer le script startServer.cmd sur un Windows ou startServer.s
 Pour générer l'index permettant la recherche, il est nécessaire d'avoir installé NPM.
 Pour cela, télécharger NodeJS depuis le site http://blog.teamtreehouse.com/install-node-js-npm-windows
 Puis ouvrir une fenêtre de commande dans le répertoire contenant le fichier package.json
-Pour installer l'outil d'indexation, exécuter la commande "npm install hugo-lunr"
-Modifier le fichier "node_modules\hugo-lunr\lib\index.js" et retirer ", {delims: '+++', lang:'toml'}" à la ligne 79
+Pour installer l'outil d'indexation, exécuter la commande "npm install"
 Pour démarrer l'indexation, exécuter le script "bin\indexation.cmd"
 
 # Pour vérifier qu'aucun lien n'est cassé #

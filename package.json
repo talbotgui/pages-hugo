@@ -2,8 +2,8 @@
 	"name": "emedia",
 	"version": "0.1.0",
 	"scripts": {
-		"serve": "./hugo serve --bind 0.0.0.0",
-		"serve-win": "hugo.exe serve --bind 0.0.0.0",
+		"serve": "./hugo serve --bind 0.0.0.0 -t hugo-theme-learn",
+		"serve-win": "hugo.exe serve --bind 0.0.0.0 -t hugo-theme-learn",
 		"build": "./hugo -t hugo-theme-learn",
 		"build-win": "hugo.exe -t hugo-theme-learn",
 		"index": "lunr-hugo -i \"docs/**/*.md\" -o static/json/search.json -l yaml"
