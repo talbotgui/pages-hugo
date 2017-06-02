@@ -43,11 +43,6 @@ img.medaillon {
 @media screen and (min-width: 42em) and (max-width: 64em) {.main-content {padding: 2rem 2rem;font-size: 1.1rem; } }
 @media screen and (max-width: 42em) {.main-content {padding: 2rem 1rem;font-size: 1rem; } }
 
-/** Pas scroll et réduction des marges entre les élements */
-.timeline .timeline-items .timeline-item { margin-bottom: 15px; }
-.timeline .timeline-items { overflow: hidden; padding-top: 15px; }
-.anchor i { margin-right: 5px; color: blue; }
-
 .retour { float:right; }
 
 .tuiles  { min-height: 240px; }
