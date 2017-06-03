@@ -1,5 +1,5 @@
 {
-	"name": "emedia",
+	"name": "mysite",
 	"version": "0.1.0",
 	"scripts": {
 		"serve": "./hugo serve --bind 0.0.0.0 -t hugo-theme-learn",
