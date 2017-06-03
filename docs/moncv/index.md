@@ -234,6 +234,9 @@ On ne se refait pas... Mais on peut s'améliorer.
 <script src="/jquery-timelify/jquery.js"></script>
 <script src="/jquery-timelify/jquery.timelify.js"></script>
 <script>
+	if (screen.width < 1000) {
+		$(".inverted").removeClass("inverted")
+	}
 	$('.timeline').timelify();
 </script>
 {{< /highlight >}}

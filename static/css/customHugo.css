@@ -28,4 +28,9 @@ li > p { text-align:left!important; }
 .timeline-items { padding-top: 15px!important; }
 .timeline-item { margin-bottom: 15px!important; }
 .timeline-item h3 { margin-top: -10px; }
+@media screen and (max-width: 1000px) {
+	.timeline  h2 { margin-right: 0px!important; }
+	.timeline-item { width: 80%!important; }
+	.timeline::before { left: 89%!important; }
+}
 .anchor i { margin-right: 5px; color: blue; }

@@ -20,20 +20,14 @@ a:hover {text-decoration: underline; }
 @media screen and (max-width: 42em) {.project-tagline {font-size: 1rem; } }
 
 /** source : https://blog.smarchal.com/avatar-en-medaillon */
-div.medaillon { position: absolute; margin-left: 250px; }
+div.medaillon { position: absolute; margin-left: 20px; }
+@media screen and (max-width: 42em) {div.medaillon {display: none; } }
 img.medaillon { 
 	width: 100px; height: 152px;
     -webkit-border-radius: 60px; -moz-border-radius: 60px; border-radius: 60px;
 	margin: 10px;
     border: 4px solid #ededed; box-shadow: 2px 2px 2px #888888;
 }
-
-.site-footer {padding-top: 2rem;margin-top: 2rem;border-top: solid 1px #eff0f1; text-align: center}
-.site-footer-owner {display: block;font-weight: bold; }
-.site-footer-credits {color: #819198; }
-@media screen and (min-width: 64em) {.site-footer {font-size: 1rem; } }
-@media screen and (min-width: 42em) and (max-width: 64em) {.site-footer { font-size: 1rem; } }
-@media screen and (max-width: 42em) {.site-footer {font-size: 0.9rem; } }
 
 .main-content :first-child {margin-top: 0; }
 .main-content img {max-width: 100%; }
