@@ -8,7 +8,7 @@ weight: 106
 
 #### Ma Définition
 
-* **La relecture de code** est le travail de tout développeur juste avant de commiter son travail. Tous les outils de gestion de version permettent d'afficher le contenu du commit (//git diff// par exemple). Une relecture permet de s'assurer que les noms des composants, opérations, attributs, paramètres et variables sont explicites, que les commentaires sont utiles, ... Le développeur pourra aussi en profiter pour vérifier que le contenu du commit correspond bien aux commentaires, qu'aucun fichier ne sera intégré au commit pour un simple ajout de ligne malencontreux, ...
+* **La relecture de code** est le travail de tout développeur juste avant de commiter son travail. Tous les outils de gestion de version permettent d'afficher le contenu du commit (*git diff* par exemple). Une relecture permet de s'assurer que les noms des composants, opérations, attributs, paramètres et variables sont explicites, que les commentaires sont utiles, ... Le développeur pourra aussi en profiter pour vérifier que le contenu du commit correspond bien aux commentaires, qu'aucun fichier ne sera intégré au commit pour un simple ajout de ligne malencontreux, ...
 
 * **La revue de code** est un processus outillé qui permet de systématiser une relecture de code faite par un tiers entre la fin du développement et l'intégration du dit code dans les sources de l'application. Le processus peut être le suivant :
  * Dès qu'un développeur pousse son travail sur le repository, une demande de revue est envoyée à un tiers
