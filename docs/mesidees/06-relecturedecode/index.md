@@ -11,7 +11,7 @@ weight: 106
 * **La relecture de code** est le travail de tout développeur juste avant de commiter son travail. Tous les outils de gestion de version permettent d'afficher le contenu du commit (//git diff// par exemple). Une relecture permet de s'assurer que les noms des composants, opérations, attributs, paramètres et variables sont explicites, que les commentaires sont utiles, ... Le développeur pourra aussi en profiter pour vérifier que le contenu du commit correspond bien aux commentaires, qu'aucun fichier ne sera intégré au commit pour un simple ajout de ligne malencontreux, ...
 
 * **La revue de code** est un processus outillé qui permet de systématiser une relecture de code faite par un tiers entre la fin du développement et l'intégration du dit code dans les sources de l'application. Le processus peut être le suivant :
- * Dès qu'un développeur pousse sont travail sur le repository, une demande de revue est envoyée à un tiers
+ * Dès qu'un développeur pousse son travail sur le repository, une demande de revue est envoyée à un tiers
  * Ce dernier, en cliquant sur le lien dans le mail, se voit afficher le code à auditer
  * Une liste de remarques est établie
  * Si le résultat de la revue est satisfaisant, un simple clic permet au commit d'être intégré à la branche principale
@@ -33,7 +33,7 @@ Certains règles de développement sont aisément vérifiables (une petite expre
 Il ne remplace pas la relecture humaine mais ils peuvent la simplifier en réduisant le nombre de règles et points d'attention à contrôler.
 
 #### Pour aller plus loin
-Pour mettre en oeuvre ces bonnes idées en poussant l'interaction un cran plus loin, il faudrait que le relecteur soit à coté du développeur pour lui réfléchir avec lui. Le relecteur aurait alors la possibilité de faire des remarques de conception aussi. C'est du **pair programming** !
+Pour mettre en oeuvre ces bonnes idées en poussant l'interaction un cran plus loin, il faudrait que le relecteur soit à côté du développeur pour lui réfléchir avec lui. Le relecteur aurait alors la possibilité de faire des remarques de conception aussi. C'est du **pair programming** !
 
 #### Sources
 * [5 reasons you are not doing code reviews] (http://blog.8thcolor.com/en/2014/04/5-reasons-you-are-not-doing-code-reviews/)

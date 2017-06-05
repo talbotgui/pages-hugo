@@ -7,7 +7,7 @@ weight: 102
 ---
 
 ### Pratiques de développement :
-* [refactoring tips - Martin Fowler] (http://fr.slideshare.net/redigon/refactoring-1658371)
+* [Refactoring tips - Martin Fowler] (http://fr.slideshare.net/redigon/refactoring-1658371)
 * [DesignPattern avec explication et code] (https://github.com/iluwatar/java-design-patterns)
 
 ### Documentation d'une solution, d'un langage ou d'un projet :
@@ -16,9 +16,9 @@ weight: 102
  * [Mock d'un FileSystem] (https://github.com/google/jimfs)
  * [Selenide - sur couche à Selenium simplifiant l'API] (http://selenide.org/quick-start.html)
 * Langages :
- * [js - les fonctionnalités de l'objet console] (https://medium.com/outsystems-experts/beyond-console-debugging-tricks-f7d0d7f5df4#.sea5g1fuv)
- * [css - les règles de priorité de la cascade] (http://openweb.eu.org/articles/cascade_css)
+ * [JS - les fonctionnalités de l'objet console] (https://medium.com/outsystems-experts/beyond-console-debugging-tricks-f7d0d7f5df4#.sea5g1fuv)
+ * [CSS - les règles de priorité de la cascade] (http://openweb.eu.org/articles/cascade_css)
 * Outils :
- * [asciiDoctor - générer la documentation avec Maven] (http://asciidoctor.org/docs/asciidoctor-maven-plugin/)
+ * [AsciiDoctor - générer la documentation avec Maven] (http://asciidoctor.org/docs/asciidoctor-maven-plugin/)
  * [Hugo] (https://gohugo.io/overview/introduction/)
  * [ELK - installation] (http://www.bogotobogo.com/Hadoop/ELK/ELK_ElasticSearch_Logstash_Kibana4.php)

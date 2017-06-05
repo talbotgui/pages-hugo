@@ -6,11 +6,11 @@ weight: 105
 
 ---
 
-La librairie **guava-retrying** est assez pratique pour définir des méthodes à ré-essayer en cas d'échec.
+La librairie **guava-retrying** est assez pratique pour définir des méthodes à réessayer en cas d'échec.
 
 Documentation : [ici] (https://github.com/rholder/guava-retrying)
 
-#### Dépendence
+#### Dépendance
 ```xml
 <dependency>
 	<groupId>com.github.rholder</groupId>

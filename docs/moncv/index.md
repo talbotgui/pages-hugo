@@ -1,5 +1,7 @@
 ---
 title: Mon CV
+prev: /mesidees/
+
 
 weight: 200
 
@@ -38,7 +40,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 				<li>Développement et maintenance d’une API de tests SOA utilisée par des développeurs</li>
 				<li>Développement d’une application Web de tests SOA utilisée par des testeurs métiers (recette)</li>
 			</ul>
-			<br/>Mes rôles durant les mois suivants au sein d'une équipe de développement LinkyCoeur :
+			<br/>Mes rôles durant les mois suivants au sein d'une équipe de développement Linky-Coeur :
 			<ul>
 				<li>Support à une équipe de développement</li>
 				<li>Développements OSB, BPEL, JEE</li>
@@ -69,12 +71,12 @@ On ne se refait pas... Mais on peut s'améliorer.
 			Contexte technique : <i>Java, Spring, JSF, Weblogic Server, Oracle DB</i>
 			<hr/>
 			<i class="fa fa-group"> 16 ETP</i>
-			<br/><time>De août 2012 à janvier 2014</time>
+			<br/><time>D'août 2012 à janvier 2014</time>
 		</li>
 		<li class="timeline-item inverted">
 			<h3>Architecte SI</h3>
 			<hr/>
-			Pour Sopra, en mission pour Storengy (GDF SUEZ )
+			Pour Sopra, en mission pour Storengy (GDF SUEZ)
 			<br/>En phase d’initialisation et jusqu’au début des développements, définition et mise en place de l’architecture pour un projet de développement de deux applications Web en Java, de la mise en place d'un CRM et d'un BI.
 			<br/>Puis, développeur, référent technique
 			<br/><br/>Mes activités :
@@ -109,7 +111,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 		<li class="timeline-item inverted">
 			<h3>Auditeur et développeur</h3>
 			<hr/>
-			Pour Sopra, en mission pour Elengy (GDF Suez), TMA évolutive d'une application Java.
+			Pour Sopra, en mission pour Elengy (Engie), TMA évolutive d'une application Java.
 			Mes activités :
 			<ul>
 				<li>phase de prise en charge de l'application en TMA (réversibilité entrante)</li>
@@ -145,7 +147,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 			<br/><br/>Contexte technique : <i>Java, Struts2, EJB3, Weblogic Server, OracleDB</i>
 			<hr/>
 			<i class="fa fa-group"> 4 ETP</i>
-			<br/><time>De août 2009 à septembre 2009</time>
+			<br/><time>D'août 2009 à septembre 2009</time>
 		</li>
 		<li class="timeline-item">
 			<h3>Auditeur et développeur </h3>
@@ -195,7 +197,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 			</ul>
 			Contexte technique : <i>UML, MDA, Java, Blu Age</i>
 			<hr/>
-			<i class="fa fa-group"> 8 ETP (seul soprasien)</i>
+			<i class="fa fa-group"> 8 ETP (seul Sopra dans l'équipe Netfective)</i>
 			<br/><time>De juillet 2008 à août 2008</time>
 		</li>
 		<li class="timeline-item">
@@ -206,7 +208,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 			<ul>
 				<li>Développement du prototype qui a servi de base de développement</li>
 				<li>Revue des modèles UML intégrés dans les exigences</li>
-				<li>Génération de code à partir des modèles métier (à base de scripting avec Power AMC)</li>
+				<li>Génération de code à partir des modèles métier (à base de scripts dans Power AMC)</li>
 				<li>Dénormalisation et maintien des modèles</li>
 				<li>Développement Back et Front</li>
 				<li>Support aux développeurs (après un an de mission)</li>

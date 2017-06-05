@@ -24,7 +24,7 @@ La dette technique
 Ces imperfections/violations se séparent en 3 groupes :
 
 * les imperfections **identifiées et délibérées** : elles sont les preuves de mauvais choix fait en toute connaissance de cause. Ces choix doivent impérativement donner lieu à un plan d'action pour résoudre le problème. Exemple : pas de mesure de la couverture de code ni de vérification des exigences qui y sont liées dans un premier temps à cause des délais. Mais on y reviendra juste après la livraison.
-* les imperfections **involontaires et relevées par un outil** : elles sont les preuves d'une incompétence ou d'une méconnaissance. Exemple : les violations relevées par Sonar sur code commité. Ces violations doivent être traitées au plus vite par leur auteur. Ainsi il apprendra de ses erreurs et ne recommencera plus.
+* les imperfections **involontaires et relevées par un outil** : elles sont les preuves d'une incompétence ou d'une méconnaissance. Exemple : les violations relevées par Sonar sur code "commité". Ces violations doivent être traitées au plus vite par leur auteur. Ainsi il apprendra de ses erreurs et ne recommencera plus.
 * les imperfections **involontaires et non identifiées** : elles sont souvent identifiées durant la résolution d'un bug. Le problème est général à tout le code mais c'est un code en particulier qui a fait émerger un problème. Il faut alors ajouter une règle de développement sur le projet (documenter la règle et l'intégrer dans les outils de vérification). Exemple : un caractère bizarre dans une page WEB va permettre de se rendre compte qu'une partie des fichiers "source" n'est pas en UTF8.
 	
 La dette se traite en
