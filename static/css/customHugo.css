@@ -23,6 +23,9 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 
 li > p { text-align:left!important; }
 
+@media screen and (max-width: 1000px) {
+#top-github-link { width: 70px; }
+
 /** Pas scroll et réduction des marges entre les élements */
 .timeline  { overflow: hidden!important; margin-bottom: 15px; }
 .timeline-items { padding-top: 15px!important; }
