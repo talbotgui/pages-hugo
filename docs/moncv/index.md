@@ -17,10 +17,9 @@ On ne se refait pas... Mais on peut s'améliorer.
 	<h2>2017</h2>
 	<ul class="timeline-items">
 		<li class="timeline-item">
-			<h3>Formateur et référent de formation</h3>
+			<h3>Formateur et référent de formations</h3>
 			<hr/>
-			Pour Sopra Steria, dans les fonctions transverses du groupe
-			Référent de plusieurs formations techniques et méthodologiques
+			Pour Sopra Steria, dans les fonctions transverses du groupe, référent de plusieurs formations techniques et méthodologiques
 			<br/>Participant aux travaux d’évolution de la méthode du groupe
 			<br/>Formateur Java et méthode du groupe (8 jours par mois en moyenne)
 			<br/>Mise à jour de plusieurs formations et création de 2 nouvelles formations Java (Hibernate avancé et Tests unitaires avancés)
@@ -31,8 +30,8 @@ On ne se refait pas... Mais on peut s'améliorer.
 		<li class="timeline-item inverted">
 			<h3>Référent technique</h3>
 			<hr/>
-			Pour Sopra Steria, en mission chez Erdf (Enedis) sur le projet Linky-Coeur
-			<br/>Projet visant à mettre en place un SI de gestion des 35 millions de compteurs électriques intelligents Linky. Le projet comprend un système de gestion de processus (BPM), d'échanges complexes (ESB) et d'application référentiels.
+			Pour Sopra Steria, en mission chez Enedis (anciennement Erdf) sur le projet Linky-Coeur
+			<br/>Projet visant à mettre en place un SI de gestion des 35 millions de compteurs électriques intelligents d'EDF. Le projet comprend un système de gestion de processus (BPM), d'échanges complexes (ESB) et d'application référentiels.
 			<br/>Mes rôles durant les 9 premiers mois au sein de l'équipe "outils de tests" :
 			<ul>
 				<li>Support à une équipe de développement</li>
