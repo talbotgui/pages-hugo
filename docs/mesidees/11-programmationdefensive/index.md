@@ -1,7 +1,7 @@
 ---
 title: Programmation défensive
 prev: /mesidees/10-guidedudev/
-next: /moncv/
+next: /mesprojets/
 
 weight: 111
 ---

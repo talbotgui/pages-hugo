@@ -1,9 +1,9 @@
 ---
 title: Mon CV
-prev: /mesidees/
+prev: /mesprojets/mariage-guidededev/
+next: /mesidees/
 
-
-weight: 200
+weight: 300
 
 ---
 Produire. C'est ma drogue. Produire du code, des documents de formation ou un billet de blog. Mais produire.
