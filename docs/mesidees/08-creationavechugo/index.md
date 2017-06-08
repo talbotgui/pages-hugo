@@ -10,7 +10,7 @@ weight: 108
 Le plus simple est toujours de partir d'une base de travail simple.
 Pour cela, sont disponibles plusieurs base :
 
-* [SIMPLE] (https://github.com/talbotgui/creation-hugo/tree/simple) : un site Hugo de 2 pages avec le thème [LEARN] (https://)
+* [SIMPLE] (https://github.com/talbotgui/creation-hugo/tree/simple) : un site Hugo de 2 pages avec le thème [LEARN] (https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/)
 * [INDUS] (https://github.com/talbotgui/creation-hugo/tree/indus) : le même site SIMPLE mais industrialisé avec NPM pour démarrer le site sur Windows, Unix ou simplement générer le site
 * [SEARCH] (https://github.com/talbotgui/creation-hugo/tree/search) : le même site INDUS avec la fonction de recherche basée sur LUNR
 * [JENKINS] (https://github.com/talbotgui/pages-hugo/tree/master) : mon site est basé sur SEARCH mais automatiquement publié sur les GitHub:pages
