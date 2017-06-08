@@ -1,5 +1,5 @@
 ---
-title: Mes idées
+title: Mes projets
 prev: /mesidees/11-programmationdefensive/
 next: /mesprojets/mariage-guidededev/
 weight: 200
