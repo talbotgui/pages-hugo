@@ -1,7 +1,7 @@
 ---
 title: Programmation défensive
 prev: /mesidees/10-guidedudev/
-next: /mesprojets/
+next: /mesidees/12-eclipse
 
 weight: 111
 ---
