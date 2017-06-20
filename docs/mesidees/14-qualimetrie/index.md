@@ -1,7 +1,7 @@
 ---
 title: Qualimétrie
 prev: /mesidees/13-pipeline/
-next: /mesprojets/
+next: /mesidees/15-js/
 
 weight: 114
 ---
