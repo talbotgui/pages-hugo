@@ -217,7 +217,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 			Contexte technique : <i>Java, Spring, Struts2, Weblogic Integration (WLI), OracleDB</i>
 			<hr/>
 			<i class="fa fa-group"> 20 ETP</i>
-			<br/><br/><time>De avril 2006 à juin 2008</time>
+			<br/><br/><time>D'avril 2006 à juin 2008</time>
 		</li>
 	</ul>
 	<h2>2006</h2>

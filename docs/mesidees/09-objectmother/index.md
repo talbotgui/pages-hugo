@@ -15,7 +15,7 @@ La particularité de ce pattern est que les données créées sont dédiés aux 
 
 Extraire le code de création de ces objets améliore la lisibilité des tests (à condition que le nom des méthodes de l'ObjectMother soit explicite).
 De plus, le fait d'utiliser systématiquement un jeu de données particulier permet de créer des données "familières". Par exemple : Jean est un nouvel utilisateur, Arnaud est un utilisateur avec des droits d'administration, ... 
-A l'usage, ces personna (ou leurs pendants quel que soit le type d'objets manipulés : facture, usine, paie, compteur, ...) finissent pas être connus de tous les développeurs. Ceci facilite la conception, le développement et la mise au point des tests.
+A l'usage, ces persona (ou leurs pendants quel que soit le type d'objets manipulés : facture, usine, paie, compteur, ...) finissent pas être connus de tous les développeurs. Ceci facilite la conception, le développement et la mise au point des tests.
 
 Sources :
 

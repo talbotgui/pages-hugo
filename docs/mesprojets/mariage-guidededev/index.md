@@ -55,7 +55,7 @@ Du point de vue métier, le besoin est assez simple : gérer les données d'un m
   * la réception des réponses, 
 * la planification des événements, 
 * le calcul des statistiques nécessaires aux mariés et prestataires, 
-* le partage de ces informations avec les proches participant à l'organisation (parents, témoins, ...)
+* le partage de ces informations avec les proches participants à l'organisation (parents, témoins, ...)
 
 Il existe déjà des sites pour faire tout ça. Mais aucun qui nous correspondait exactement. Et tous, systématiquement, sont envahis de publicité (*donc, en bon geek, j'ai fait le mien*).
 
@@ -85,7 +85,7 @@ Ce projet ne compte pas tous les environnements d'un projet classique (comprendr
 
 ## Architecture technique
 
-En bon développeur Java, l'application se base sur Hibernate et Spring. Pour ne pas avoir à installer de composant tiers sur les environnements et parce que les exigences le permettent, l'application est auto-porteuse avec SpringBoot. Ce dernier démarre un serveur WEB (Tomcat) et une base de données (HSQL) automatiquement.
+En bon développeur Java, l'application se base sur Hibernate et Spring. Pour ne pas avoir à installer de composant tiers sur les environnements et parce que les exigences le permettent, l'application est autoporteuse avec SpringBoot. Ce dernier démarre un serveur WEB (Tomcat) et une base de données (HSQL) automatiquement.
 
 Pour réduire les bugs, rien de tel que de réduire le volume de code. Donc SpringData pour la persistance. Ce qui impose l'usage de JPA à la place de l'API Hibernate native.
 
@@ -131,11 +131,11 @@ Toute requête de recherche sans paramètre optionnel doit être codée dans un 
 La gestion des transactions et des erreurs se traite au niveau des services qui sont les points d'entrée et de sortie des transactions.
 #### API
 Les services ne sont exposés via l'API que s'ils sont utilisés par l'IHM.
-La validation des paramètres d'entrée se fait dans le "controlleur".
-La transformation des entités en DTO se fait dans le "controlleur" (dont c'est la responsabilité).
+La validation des paramètres d'entrée se fait dans le "contrôleur".
+La transformation des entités en DTO se fait dans le "contrôleur" (dont c'est la responsabilité).
 #### WEB - Pages
 Les tableaux de données sont réalisés avec le plugin JQxGrid.
-Dans un premier temps, les filtres, paginations et tris sont fait coté client (par le framework).
+Dans un premier temps, les filtres, paginations et tris sont réalisés du coté client (par le framework).
 Une fois l'usage courant du tableau défini, les bons filtres et tris (et donc aussi la pagination) doivent être implémentés coté serveur.
 #### WEB - JS
 Aucun script ne doit être présent dans la page HTML. A chaque page est associé un script. Les éléments communs à toutes les pages sont dans le script *common.js*.
@@ -154,8 +154,8 @@ Les composants applicatifs sont suffixés en fonction de leur type :
 * "Exception" pour les exceptions,
 * "DTO" pour les structures de données de transport, 
 * "Service" pour les services métiers, 
-* "DAO" pour l'accès à la persistence, 
-* "Controlleur" pour l'exposition de service en REST 
+* "DAO" pour l'accès à la persistance, 
+* "contrôleur" pour l'exposition de service en REST 
 * et "Test" pour tous les tests
 
 Les entités métier et les classes utilitaires ne sont pas suffixées mais doivent avoir des noms parlant (l'usage du nom d'un pattern est utile pour décrire l'usage/l'utilité du composant)
@@ -168,16 +168,16 @@ L'usage des Save Actions d'Eclipse est obligatoire pour conserver l'homogénéit
 Le formatage des sources est celui par défaut dans Eclipse (version Néon) : 120 caractères par ligne (80 pour les commentaires) et indentation par tabulation.
 Les membres sont triés systématiquement.
 Les lignes ne contenant que des tabulations et/ou des espaces sont vidées.
-Le mot clef "final" est placé sur toutes les variables affectée sune seule fois et sur les paramètres.
+Le mot clef "final" est placé sur toutes les variables affectées une seule fois et sur les paramètres.
 Le mot clef "this" est utilisé systématiquement.
 Les cast inutiles sont supprimés.
 
 #### HQL
-Les requêtes HQL simples peuvent être écrites sur une seule ligne. Les complexes sont formatées pour être plus lisible. L'usage des commentaires "//" en fin de ligne est autorisé pour forcer Eclipse à conserver à la ligne la chaîne de caractère à concaténer.
+Les requêtes HQL simples peuvent être écrites sur une seule ligne. Les plus complexes sont formatées pour être plus lisible. L'usage des commentaires "//" en fin de ligne est autorisé pour forcer Eclipse à conserver à la ligne la chaîne de caractère à concaténer.
 
 Toujours définir par défaut l'attribut READ_ONLY à *true* sur une méthode chargeant des entités persistantes. Seules les entités nécessitant d'être "managed" doivent l'être (cf. documentation hibernate sur le cycle de vie des objets dans une session)
 Ne jamais créer un lien entre deux entités en instanciant une entité et ne définissant que son ID. Toujours utiliser *EntityManager.getReference*
-La gestion des transaction est faite via les annotations Spring. Les exceptions du projet sont *runtime* et déclenchent donc le rollback. Seuls les composants de type "Service" et "DAO" peuvent être transactionnels (par les "Controlleur")
+La gestion des transactions est faite via les annotations Spring. Les exceptions du projet sont *runtime* et déclenchent donc le rollback. Seuls les composants de type "Service" et "DAO" peuvent être transactionnels (par les "contrôleur")
 
 ## Processus de développement
 #### Gestion de configuration logicielle (GCL)
@@ -216,14 +216,14 @@ Sujets non traités ici (pour le moment) :
  * jeu de données de test
 * développement
  * liste des frameworks disponibles, leur usage et le pointeur sur leur documentation
- * qualimétrie obligatoire avec le site "online" (avec sa conf imposée d'où les violations non corrigée qui ne le seront pas)
+ * qualimétrie obligatoire avec le site "online" (avec sa configuration imposée par la plateforme d'où les violations non corrigée qui ne le seront pas)
  * HQL propre
  * code en français
  * méthode = verbe à l'infinitif
  * largeur 120 (on a tous des résolutions d'écran suffisante)
  * ...
 * industrialisation :
- * aucune installation de poste automatique car seul l'IDE est nécessaire et l'application est auto-porteuse
+ * aucune installation de poste automatique car seul l'IDE est nécessaire et l'application est autoporteuse
  * IC = jenkins toujours à jour avec un pipelineAsCode (lien vers le blog sur le sujet)
  * pipeline = git/compile/TU/TI/TA/qualimétrie/promotion/production
  * à quand un second développeur et la mise en place des pullrequest et des revues de code ?

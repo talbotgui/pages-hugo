@@ -14,7 +14,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [dette technique] (/mesidees/01-dettetechnique/)
  * [relecture de code] (/mesidees/06-relecturedecode/)
  * [qualimétrie] (/mesidees/14-qualimetrie/)
- * [Integration Continue - pipeline] (/mesidees/13-pipeline/)
+ * [intégration Continue - pipeline] (/mesidees/13-pipeline/)
  * [guide du développeur] (/mesidees/10-guidedudev/)
  
 * développement - langages / outils
@@ -25,7 +25,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
 * développement - pratiques & patterns
  * [tests de développement] (/mesidees/03-testsdedeveloppement/)
  * [guide du développeur] (/mesidees/10-guidedudev/)
- * [Object Mother - comment créer des jeux de données dans un test] (/mesidees/09-objectmother/)
+ * [object mother - comment créer des jeux de données dans un test] (/mesidees/09-objectmother/)
  * [programmation défensive] (/mesidees/11-programmationdefensive/)
 
 * développement - astuces & frameworks

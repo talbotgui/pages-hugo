@@ -13,7 +13,7 @@ weight: 106
 * **La revue de code** est un processus outillé qui permet de systématiser une relecture de code faite par un tiers entre la fin du développement et l'intégration du dit code dans les sources de l'application. Le processus peut être le suivant :
  * Dès qu'un développeur pousse son travail sur le repository, une demande de revue est envoyée à un tiers
  * Ce dernier, en cliquant sur le lien dans le mail, se voit afficher le code à auditer
- * L'auditeur parcours le code et y incruste des remarques
+ * L'auditeur parcourt le code et y incruste des remarques
  * Si le résultat de la revue est satisfaisant, un simple clic permet au commit d'être intégré à la branche principale
  * Si le nombre de remarques (ou leur sévérité) est trop élevé, une notification est envoyée au développeur pour qu'il corrige son code
 
@@ -29,7 +29,7 @@ Quelques soient les pratiques du projet (revue ou audit ou les deux), l'élémen
 * le relecteur et le développeur ne pourront apprendre l'un de l'autre que s'ils communiquent les yeux dans les yeux.
 
 #### Pour se simplifier la vie
-Certains règles de développement sont aisément vérifiables (avec une petite expression régulière par exemple). Pourquoi ne pas utiliser un outil pour contrôler le code ? Il existe quantité d'outil de qualimétrie pour tous les langages.
+Certaines règles de développement sont aisément vérifiables (avec une petite expression régulière par exemple). Pourquoi ne pas utiliser un outil pour contrôler le code ? Il existe quantité d'outil de qualimétrie pour tous les langages.
 Ils ne remplacent pas la relecture humaine mais ils peuvent la simplifier en réduisant le nombre de règles et de points d'attention à contrôler.
 
 #### Pour aller plus loin
