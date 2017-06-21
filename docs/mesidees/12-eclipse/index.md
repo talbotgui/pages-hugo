@@ -83,4 +83,4 @@ Son but : à chaque sauvegarde d'une classe Java, il exécute un certain nombre 
 
 Le plugin **JBoss Tools** contient les **Hibernate Tools**.
 Ce plugin permet de configurer un éditeur de requête HQL lié à une base de données et une configuration JPA (ou Hibernate) et permet l'exécution et le débogage de requêtes.
-
+(cf. [billet décrivant l'usage de ce plugin](/mesidees/04-consolehibernate/))
