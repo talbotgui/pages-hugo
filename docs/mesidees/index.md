@@ -17,9 +17,10 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [Integration Continue - pipeline] (/mesidees/13-pipeline/)
  * [guide du développeur] (/mesidees/10-guidedudev/)
  
-* développement - outils
+* développement - langages / outils
  * [créer une console Hibernate] (/mesidees/04-consolehibernate/)
  * [Eclipse] (/mesidees/12-eclipse/)
+ * [quelques incontournables de JS] (/mesidees/15-js)
 
 * développement - pratiques & patterns
  * [tests de développement] (/mesidees/03-testsdedeveloppement/)
