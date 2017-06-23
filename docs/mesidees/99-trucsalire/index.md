@@ -1,5 +1,7 @@
 ---
 title: Trucs à lire
+prev: /mesidees/15-js/
+next: /mesprojets/
 
 weight: 199
 ---

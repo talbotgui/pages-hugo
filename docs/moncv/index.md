@@ -1,7 +1,7 @@
 ---
 title: Mon CV
 prev: /mesprojets/mariage-guidededev/
-next: /mesidees/
+next: /moncv/01-limitescv/
 
 weight: 300
 

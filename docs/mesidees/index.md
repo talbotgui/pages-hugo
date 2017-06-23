@@ -36,6 +36,6 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [créer un site avec Hugo] (/mesidees/08-creationavechugo/)
  * [Hugo et GitHub:Pages] (/mesidees/07-hugoetgithubpages/)
 
-
+* [liens vers d'autres sujets intéressants](/mesidees/99-trucsalire/)
 
 *La page 'guide du développeur' est présente plusieurs fois dans ce menu car c'est un élément central de tout projet.*

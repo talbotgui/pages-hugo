@@ -1,7 +1,7 @@
 ---
 title: JS
 prev: /mesidees/14-qualimetrie/
-next: /mesprojets/
+next: /mesidees/99-trucsalire/
 
 weight: 115
 ---
