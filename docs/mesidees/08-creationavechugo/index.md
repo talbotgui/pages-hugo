@@ -26,7 +26,7 @@ Donc le contenu du site est codé en Markdown et Hugo génère les pages WEB.
 L'avantage d'un site statique est qu'il est extrêmement performant. Cette solution est utilisée en production pour générer des pages WEB dont la fréquence de modification des contenus est faible (1 à 2 fois par jour).
 
 #### Manipulation
-Le site se démarre en double-cliquant sur "/bin/startServer.cmd". Le site est alors disponible sur l'adresse "http://localhost:1313".
+Le site se démarre en double-cliquant sur "/bin/startServer.cmd". Le site est alors disponible sur l'adresse [http://localhost:1313](http://localhost:1313).
 
 Toute modification d'une page existante déclenche automatiquement son rafraîchissement dans le navigateur. Mais l'ajout d'une nouvelle page n'est pas pris en compte à chaud. Il faut couper le serveur et le redémarrer.
 
