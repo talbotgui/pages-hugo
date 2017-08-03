@@ -21,6 +21,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [créer une console Hibernate] (/mesidees/04-consolehibernate/)
  * [Eclipse] (/mesidees/12-eclipse/)
  * [quelques incontournables de JS] (/mesidees/15-js)
+ * [Angular] (/mesidees/16-angular)
 
 * développement - pratiques & patterns
  * [tests de développement] (/mesidees/03-testsdedeveloppement/)
