@@ -1,7 +1,7 @@
 ---
 title: JS
 prev: /mesidees/14-qualimetrie/
-next: /mesidees/99-trucsalire/
+next: /mesidees/16-angular/
 
 weight: 115
 ---
