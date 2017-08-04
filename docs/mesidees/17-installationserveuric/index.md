@@ -128,9 +128,8 @@ Modifier le fichier /usr/share/maven/conf/settings.xml pour définir le repo loc
 
 #### Installation NPM & NodeJS
 ```ssh
-sudo apt-get install nodejs npm
-sudo ln -s /usr/bin/nodejs /usr/local/bin/node
-sudo ln -s /usr/bin/npm /usr/local/bin/npm
+curl -sL https://deb.nodesource.com/setup_7.x | sudo bash -
+sudo apt-get install nodejs
 ```
 
 #### Si la machine est de type *tiny*
