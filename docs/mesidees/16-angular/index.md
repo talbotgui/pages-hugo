@@ -1,7 +1,7 @@
 ---
 title: Angular
 prev: /mesidees/15-js/
-next: /mesidees/99-trucsalire/
+next: /mesidees/17-installationserveuric/
 
 weight: 116
 ---

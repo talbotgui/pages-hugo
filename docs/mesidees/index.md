@@ -16,6 +16,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [qualimétrie] (/mesidees/14-qualimetrie/)
  * [intégration Continue - pipeline] (/mesidees/13-pipeline/)
  * [guide du développeur] (/mesidees/10-guidedudev/)
+ * [installation d'un serveur pour une IC] (/mesidees/17-installationserveuric)
  
 * développement - langages / outils
  * [créer une console Hibernate] (/mesidees/04-consolehibernate/)
