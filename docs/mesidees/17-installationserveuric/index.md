@@ -1,7 +1,7 @@
 ---
 title: Installation d'un serveur pour une Integration Continue
 prev: /mesidees/16-angular/
-next: /mesidees/99-trucsalire/
+next: /mesidees/18-licences/
 
 weight: 117
 ---
@@ -132,6 +132,14 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo bash -
 sudo apt-get install nodejs
 ```
 
+#### Installation de Chrome :
+```ssh
+sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+```
+
 #### Si la machine est de type *tiny*
 La machine va manquer de RAM. Pour ajouter une partition de SWAP (dans un fichier) (http://tecadmin.net/add-swap-partition-on-ec2-linux-instance/)
 ```ssh
@@ -139,3 +147,6 @@ dd if=/dev/zero of=/var/myswap bs=1M count=2048
 mkswap /var/myswap
 swapon /var/myswap
 ```
+
+#### Les répertoires à vider pour récupérer de l'espace :
+/var/lib/jenkins/.npm/_logs/
