@@ -23,6 +23,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
  * [Eclipse] (/mesidees/12-eclipse/)
  * [quelques incontournables de JS] (/mesidees/15-js)
  * [Angular] (/mesidees/16-angular)
+ * [Git Cheat Sheet] (/mesidees/19-git)
 
 * développement - pratiques & patterns
  * [tests de développement] (/mesidees/03-testsdedeveloppement/)
@@ -32,6 +33,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
 
 * développement - astuces & frameworks
  * [coder des ré-essais en Java] (/mesidees/05-retryenjava/)
+ * [gestion des licences] (/mesidees/18-licences)
 
 * documentation
  * [guide du développeur] (/mesidees/10-guidedudev/)

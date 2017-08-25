@@ -1,6 +1,6 @@
 ---
 title: Trucs à lire
-prev: /mesidees/18-licences/
+prev: /mesidees/19-git/
 next: /mesprojets/
 
 weight: 199

@@ -99,3 +99,6 @@ Quelques commandes :
  * Pour lancer les tests avec couverture de code : ```sh ng test --code-coverage --reporters=coverage-istanbul```
  * Pour lancer les tests avec PhantomJS : ```sh ng test --config=karma-ic.conf.js```
 
+#### Intégrer des frameworks supplémentaires :
+
+* [Pour AwesomeFont] (https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/include-font-awesome.md)
