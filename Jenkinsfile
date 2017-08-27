@@ -25,12 +25,12 @@ pipeline {
 				stash name: 'sources', includes: '*'
 			}
 		}
-
+		
 		stage ('Build') {
 			agent any
 			steps {
 				unstash 'sources'
-
+				
 				// télécharge les dépendances
 				sh "npm install"
 
@@ -40,7 +40,7 @@ pipeline {
 				sh "npm run index"
 
 				// génère le site
-				sh "chmod u+x ./hugo"
+				sh "chmod u+x ./hugo-0.26"
 				sh "npm run build"
 
 				stash name: 'public', includes: 'public/**/*'

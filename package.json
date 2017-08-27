@@ -2,14 +2,13 @@
 	"name": "mysite",
 	"version": "0.1.0",
 	"scripts": {
-		"serve": "./hugo serve --bind 0.0.0.0 -t hugo-theme-learn",
-		"serve-win": "hugo.exe serve --bind 0.0.0.0 -t hugo-theme-learn",
-		"build": "./hugo -t hugo-theme-learn",
-		"build-win": "hugo.exe -t hugo-theme-learn",
+		"serve": "./hugo-0.26 serve --bind 0.0.0.0 -t hugo-theme-learn",
+		"serve-win": "hugo-0.26.exe serve --bind 0.0.0.0 -t hugo-theme-learn",
+		"build": "./hugo-0.26 -t hugo-theme-learn",
+		"build-win": "hugo-0.26.exe -t hugo-theme-learn",
 		"index": "lunr-hugo -i \"docs/**/*.md\" -o static/json/search.json -l yaml"
 	},
 	"dependencies": {
 		"lunr-hugo": "0.1.2"
 	}
 }
-

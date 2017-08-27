@@ -7,6 +7,6 @@ metaDataFormat= "yaml"
 
 [params]
 # URL to edit current page.
-editURL = "https://github.com/talbotgui/pages-hugo/edit/master/docs/"
+#editURL = "https://github.com/talbotgui/pages-hugo/edit/master/docs/"
 # Active the search. See doc: need more configuration
 search = true
