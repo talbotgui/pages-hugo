@@ -6,7 +6,7 @@
 		"serve-win": "hugo-0.26.exe serve --bind 0.0.0.0 -t hugo-theme-learn",
 		"build": "./hugo-0.26 -t hugo-theme-learn",
 		"build-win": "hugo-0.26.exe -t hugo-theme-learn",
-		"index": "lunr-hugo -i \"docs/**/*.md\" -o static/json/search.json -l yaml"
+		"index": "lunr-hugo -i \"docs/**/*.md\" -o static/index.json -l yaml"
 	},
 	"dependencies": {
 		"lunr-hugo": "0.1.2"

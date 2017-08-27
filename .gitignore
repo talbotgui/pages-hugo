@@ -1,5 +1,5 @@
 public/
 node_modules/
 npm-debug.log
-static/json/search.json
+static/index.json
 package-lock.json
