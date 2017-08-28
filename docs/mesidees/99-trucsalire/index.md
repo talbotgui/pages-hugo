@@ -1,6 +1,6 @@
 ---
 title: Trucs à lire
-prev: /mesidees/19-git/
+prev: /mesidees/20-gitflow/
 next: /mesprojets/
 
 weight: 199
