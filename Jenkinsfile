@@ -15,7 +15,7 @@ pipeline {
 			steps {
 
 				// clone des sources du site
-				git url: 'https://github.com/talbotgui/pages-hugo.git'
+				checkout scm
 
 				// clone du thème HUGO
 				dir('themes') {
