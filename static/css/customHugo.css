@@ -1,33 +1,15 @@
-/* Override theme colors */
-body { font-size: 16px !important; }
-h2, h3, h4, h5, h6 { font-weight: 400; line-height: 1.1;}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;}
-h2 { font-size: 2.5rem; line-height: 110% !important; margin: 2.5rem 0 1.5rem 0; text-transform: none;}
-h3 { font-size: 2rem; line-height: 110% !important; margin: 2rem 0 1rem 0;}
-h4 { font-size: 1.5rem; line-height: 110% !important; margin: 1.5rem 0 0.75rem 0;}
-h5 { font-size: 1; line-height: 110% !important; margin: 1rem 0 0.2rem 0;}
-h6 { font-size: 0.5rem; line-height: 110% !important; margin: 0.5rem 0 0.2rem 0;}
-a { color: rgb(210,0,33); }
-a:hover { color: #8A0116; }
-a.highlight:after { background-color: #8A0116;}
-p { margin: 1rem 0;}
-textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus { border-color: #AB001B; box-shadow: inset 0 1px 3px rgba(0,0,0,.06),0 0 5px rgba(210,0,33,.7);}
-#sidebar { background-color: #323232; }
-#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active { background-color: #232323; }
-#sidebar ul li a span img { vertical-align: text-top; width: 20px; height: 20px; -webkit-filter: invert(85%); filter: invert(85%);}
-#sidebar ul.topics > li.active a span img { -webkit-filter: invert(0%); filter: invert(0%); opacity:0.5;}
+/* La variante de theme "blue" est activée depuis le fichier config.toml */
 
-.anchor { color: rgb(210,0,33);}
+/* Pour les chapitres */
+#chapter li p { text-align:left!important; }
 
-.searchbox { margin-top: 1rem; position: relative; border-radius: 4px;}
+/* Boite de recherche */
+.searchbox { margin-top: 1rem; position: relative; border-radius: 40px;}
 
-li > p { text-align:left!important; }
 
-@media screen and (max-width: 1000px) {
-	#top-github-link { width: 70px; }
-}
 /** Pas scroll et réduction des marges entre les élements */
 .timeline  { overflow: hidden!important; margin-bottom: 15px; }
+.timeline h2 { color: white!important; }
 .timeline-items { padding-top: 15px!important; }
 .timeline-item { margin-bottom: 15px!important; }
 .timeline-item h3 { margin-top: -10px; }
@@ -36,4 +18,4 @@ li > p { text-align:left!important; }
 	.timeline-item { width: 80%!important; }
 	.timeline::before { left: 89%!important; }
 }
-.anchor i { margin-right: 5px; color: blue; }
+

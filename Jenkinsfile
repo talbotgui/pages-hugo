@@ -34,11 +34,6 @@ pipeline {
 				// télécharge les dépendances
 				sh "npm install"
 
-    			// génère l'index
-				// /!\ la commande node a été renommée en nodejs
-				sh "sed -i 's/node/nodejs/' ./node_modules/lunr-hugo/bin/index.js"
-				sh "npm run index"
-
 				// génère le site
 				sh "chmod u+x ./hugo-0.26"
 				sh "npm run build"

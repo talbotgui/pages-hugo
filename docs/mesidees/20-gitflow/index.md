@@ -1,7 +1,7 @@
 ---
 title: les différents FLOW avec Git
 prev: /mesidees/19-git/
-next: /mesidees/99-trucsalire/
+next: /mesidees/21-jenkins/
 
 weight: 120
 ---
@@ -105,3 +105,7 @@ source :
 sources de réflexion :
 
 * [comparaison de workflow] (https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow)
+
+### Mes propres questions :
+Les featureBranch sont bien pratiques. Associées aux PullRequest qui permettent une relecture du code, on a un bon process de relecture obligatoire.
+Mais comment s'assurer à tout moment que ma branche featureBranch_xx n'est pas incompatible avec la featureBranch_zzz d'un collègue ?

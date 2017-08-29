@@ -1,3 +1,5 @@
+# Documentation de la V2 : https://learn.netlify.com/en/basics/configuration/
+
 baseurl = "https://talbotgui.github.io/"
 languageCode = "fr-fr"
 title = "Guillaume TALBOT"
@@ -5,8 +7,13 @@ contentdir = "docs"
 theme = "hugo-theme-learn"
 metaDataFormat= "yaml"
 
+  
 [params]
-# URL to edit current page.
+author = "Guillaume TALBOT"
+description = "Guillaume TALBOT - mon CV, mes projets et mes idées"
 #editURL = "https://github.com/talbotgui/pages-hugo/edit/master/docs/"
-# Active the search. See doc: need more configuration
-search = true
+showVisitedLinks = true
+themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
