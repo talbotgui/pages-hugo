@@ -1,7 +1,7 @@
 ---
 title: Mariage - Guide du développeur
 prev: /mesprojets/
-next: /moncv/
+next: /mesprojets/bulletin-guidededev/
 weight: 201
 
 ---

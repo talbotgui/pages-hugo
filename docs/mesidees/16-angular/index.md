@@ -100,5 +100,12 @@ Quelques commandes :
  * Pour lancer les tests avec PhantomJS : ```sh ng test --config=karma-ic.conf.js```
 
 #### Intégrer des frameworks supplémentaires :
-
 * [Pour AwesomeFont] (https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/include-font-awesome.md)
+
+#### Quelques lectures utiles :
+* [modularité avec TS] (https://stackoverflow.com/questions/30357634/how-do-i-use-namespaces-with-typescript-external-modules)
+* [pour trouver un type] (http://microsoft.github.io/TypeSearch/)
+
+#### Quelques commandes NPM utiles :
+* pour lister les versions d'un package : ```ssh npm show monPackage@* version```
+* pour lister les packages qui ne sont pas en dernière version : ```ssh npm outdated```

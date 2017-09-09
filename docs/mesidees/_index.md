@@ -42,4 +42,7 @@ Cette partie du site contient des résumés d'articles, des opinions, des astuce
 
 * [liens vers d'autres sujets intéressants](/mesidees/99-trucsalire/)
 
+* site et outils à connaître
+  * [vérifier le paramétrage de son site Internet] (https://tools.geekflare.com/tools)
+
 *La page 'guide du développeur' est présente plusieurs fois dans ce menu car c'est un élément central de tout projet.*

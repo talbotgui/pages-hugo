@@ -86,6 +86,17 @@ ProxyPassReverse /jenkins  http://me.guillaumetalbot.com/jenkins
 RequestHeader set X-Forwarded-Proto "https"
 RequestHeader set X-Forwarded-Port "443"
 AllowEncodedSlashes NoDecode
+
+<IfModule mod_headers.c>
+ Header set X-Content-Type-Options nosniff
+ Header set Content-Security-Policy "child-src 'none'; object-src 'none'"
+ Header set X-Permitted-Cross-Domain-Policies "none"
+ Header set X-Frame-Options DENY
+ Header set X-XSS-Protection "1; mode=block;"
+ Header set Strict-Transport-Security "max-age=300; includeSubDomains; preload; always;"
+ Header set Public-Key-Pins "pin-sha256=\"base64+primary==\"; pin-sha256=\"base64+backup==\"; max-age=5184000; includeSubDomains"
+</IfModule>
+
 ```
 
 Puis exécuter :

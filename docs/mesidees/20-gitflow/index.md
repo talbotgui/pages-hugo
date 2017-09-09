@@ -109,3 +109,9 @@ sources de réflexion :
 ### Mes propres questions :
 Les featureBranch sont bien pratiques. Associées aux PullRequest qui permettent une relecture du code, on a un bon process de relecture obligatoire.
 Mais comment s'assurer à tout moment que ma branche featureBranch_xx n'est pas incompatible avec la featureBranch_zzz d'un collègue ?
+
+### A lire et relire :
+* [MoreVersionControl par Martin FOWLER] (http://martinfowler.com/bliki/MoreVersionControl.html)
+* [FeatureBranch par Martin FOWLER] (http://martinfowler.com/bliki/FeatureBranch.html)
+* [BranchByAbstraction par Martin FOWLER] (http://martinfowler.com/bliki/BranchByAbstraction.html)
+* [Subversion par Martin FOWLER] (http://martinfowler.com/bliki/Subversion.html)
