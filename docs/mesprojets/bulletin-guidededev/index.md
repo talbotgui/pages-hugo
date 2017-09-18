@@ -98,6 +98,8 @@ Les manipulations complexes, non réutilisables et propres à un sous-ensemble d
 #### Composants Angular
 Les composants doivent être les plus simples possibles et limités la duplication de code. Pour cela, les éléments communs à tous les écrans comme la saisie de note ou de compétence doivent être l'objet de composant dédié.
 
+Les injections de dépendances doivent se faire par la déclaration d'un membre **privé** dans le constructeur
+
 ## Règles de développement
 Les règles ci-dessous doivent être appliquées par tout développeur souhaitant participer à ce projet (non négociable). **Par contre, il est toujours possible de discuter de la modification d'une règle.**
 
