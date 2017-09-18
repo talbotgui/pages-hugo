@@ -46,16 +46,16 @@ D'autres outils sont aussi disponibles :
   * LogStash
 * Extraire toutes les archives 
 * *En option*, installer X-Pack en exécutant les commandes :
-  * depuis le répertoire d'installation d'ElasticSearch : ```ssh bin/elasticsearch-plugin install x-pack```
-  * depuis le répertoire d'installation de Kibana : ```ssh bin/kibana-plugin install x-pack```
+  * depuis le répertoire d'installation d'ElasticSearch : ``` bin/elasticsearch-plugin install x-pack```
+  * depuis le répertoire d'installation de Kibana : ``` bin/kibana-plugin install x-pack```
 * Paramétrer les outils :
   * *En option* pour réaliser un prototype et éviter qu'ElasticSearch n'hurle en cas de problème de disque ([source](https://www.elastic.co/guide/en/elasticsearch/reference/current/disk-allocator.html)) :
     * éditer le fichier elasticsearch.yml 
 	* ajouter ```cluster.routing.allocation.disk.threshold_enabled: false```
 	* ou ajouter ```cluster.routing.allocation.disk.watermark.high: 99```
 * Démarrer les outils :
-  * depuis le répertoire d'installation d'ElasticSearch : ```ssh bin/elasticsearch```
-  * depuis le répertoire d'installation de Kibana : ```ssh bin/kibana```
+  * depuis le répertoire d'installation d'ElasticSearch : ``` bin/elasticsearch```
+  * depuis le répertoire d'installation de Kibana : ``` bin/kibana```
 * Ouvrir Kibana dans [un navigateur] (http://localhost:5601) 
 
 #### Paramétrer une configuration basique
@@ -190,7 +190,7 @@ Et des commandes pour démarrer les outils et nettoyer les répertoires pour ré
 
 * 0-resetTouteLaChaine.cmd :
 
-```ssh 
+``` 
 rmdir filebeat-5.6.0-windows-x86_64\data /Q /S
 
 rmdir logstash-5.6.0\data /Q /S
@@ -200,13 +200,13 @@ rmdir elasticsearch-5.6.0\data /Q /S
 rmdir kibana-5.6.0-windows-x86\data /Q /S
 ```
 
-* 1-elasticsearch.cmd : ```ssh elasticsearch-5.6.0\bin\elasticsearch ```
+* 1-elasticsearch.cmd : ``` elasticsearch-5.6.0\bin\elasticsearch ```
 
-* 2-kibana.cmd : ```ssh kibana-5.6.0-windows-x86\bin\kibana```
+* 2-kibana.cmd : ``` kibana-5.6.0-windows-x86\bin\kibana```
 
 * 3-startLogStash.cmd :
 
-```ssh 
+``` 
 title Logstash
 
 logstash-5.6.0\bin\logstash -f configLogStash/mesLogs_pipeline.conf --config.reload.automatic
@@ -214,7 +214,7 @@ logstash-5.6.0\bin\logstash -f configLogStash/mesLogs_pipeline.conf --config.rel
 
 * 4-startFileBeat.cmd :
 
-```ssh 
+``` 
 title FileBeats
 
 filebeat-5.6.0-windows-x86_64\filebeat -e -c configFileBeat/mesLogs_filebeat.yml -d "publish"
