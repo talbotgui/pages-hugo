@@ -39,26 +39,26 @@ Les règles de conception/développement portent sur beaucoup d'aspects du code.
 * format du code : 
   * longueur des lignes de code,
   * longueur des lignes de commentaire,
-  * nombre de ligne maximal d'une méthode,
-  * nombre de ligne maximal d'une classe,
+  * nombre de lignes maximal d'une méthode,
+  * nombre de lignes maximal d'une classe,
   * tabulation en espace ou non,
   * indentation
+  * ...
 * lisibilité et compréhensibilité du code :
   * longueur des noms de variables/paramètres/membres/méthodes/classes/interfaces/package,
   * mauvais usages des noms réservés (i, j, T, ...)
+  * ...
 * complexité des algorithmes :
   * nombre maximal de boucles imbriquées,
   * méthodes récursives, 
   * mauvais usages de mots clefs (*return*, *break*, *continue*, ...)
+  * ...
 * couverture de code
   * pourcentage de lignes de code testées
   * pourcentage de combinaisons de conditions (if, while, ...) testées
 * sécurité
 * duplication
-
-
-**TO CONTINUE**
-**A partir des groupes Sonar et Checkstyle**
+* ...
 
 ## Quels outils
 L'outil le plus connu est SonarQube.
@@ -104,4 +104,3 @@ Mais, le mieux serait qu'un outil prévienne le développeur dès qu'il code une
 La réponse : SonarLint ! Cet outil (sous forme de plugin dans les IDE) se connecte à SonarQube, télécharge les règles de validation et vérifie le code directement dans l'environnement du développeur.
 
 Avec cet outil, si un développeur crée encore des violations, c'est qu'il se moque de son équipe. Là, très chères collègues, je vous laisse lui expliquer votre point de vue entre gens courtois et polis (dans la mesure du possible ;) ).
-
