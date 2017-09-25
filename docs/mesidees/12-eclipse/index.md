@@ -6,14 +6,6 @@ next: /mesidees/13-pipeline/
 weight: 112
 ---
 
-* [Introduction](#introduction)
-* [Un outil mal/sous utilisé](#un-outil-mal-sous-utilisé)
-* [Comment apprendre à utiliser pleinement Eclipse ?](#comment-apprendre-à-utiliser-pleinement-eclipse)
-* [Les raccourcis à connaître](#les-raccourcis-à-connaître)
-* [Les fonctionnalités natives indispensables](#les-fonctionnalités-natives-indispensables)
-* [Les plugins très utiles en fonction des projets](#les-plugins-très-utiles-en-fonction-des-projets)
-
-
 #### Introduction
 
 Eclipse est un IDE, un environnement de développement intégré. A ce titre, il propose un éditeur de texte et des centaines de fonctionnalités autour. Basé sur un système de plugin, il est très extensible et très personnalisable.
@@ -84,3 +76,52 @@ Son but : à chaque sauvegarde d'une classe Java, il exécute un certain nombre 
 Le plugin **JBoss Tools** contient les **Hibernate Tools**.
 Ce plugin permet de configurer un éditeur de requête HQL lié à une base de données et une configuration JPA (ou Hibernate) et permet l'exécution et le débogage de requêtes.
 (cf. [billet décrivant l'usage de ce plugin](/mesidees/04-consolehibernate/))
+
+#### D'autres outils bien utiles :
+
+**SVN stat** analyse les logs SVN d'un dépot et génère des rapports d'usage de l'outil par les développeurs : mots qui reviennent souvent dans les commentaires, volume de code par commit (en ajout ou modification), jour et heure des commits, ...
+
+Ces informations peuvent être utilisées pour vérifier le bon usage de SVN car ce n'est pas un outil de sauvegarde de son travail hebdomadaire à utiliser le vendredi soir entre 16h et 18h !
+
+Pour l'utiliser : télécharger SvnStat depuis [SourceForge] (https://svnstat.sourceforge.net) ou [ici](/autres/statsvn.jar) et créer un script *genereRapport.cmd* contenant :
+```
+@echo off
+
+set hour=%time:~0,2%
+if "%time:~0,1%"==" " set hour=0%time:~1,1%
+set rapportDir=audit-%date:~6,4%%date:~3,2%%date:~0,2%-%hour%%time:~3,2%
+set PATH=%PATH%;C:\Program Files\VisualSVN Server\bin\
+set svnUrl=http://raptor-chess-interface.googlecode.com/svn/trunk/
+set premierRepertoire=trunk
+
+@REM création des répertoires de l'audit
+echo Etape 1/5 : creation du rapport %rapportDir%
+mkdir %rapportDir%
+cd %rapportDir%
+
+@REM création des sous-répertoires
+mkdir sources
+mkdir rapports
+
+@REM checkout des sources
+echo Etape 2/5 : checkout des sources
+cd sources
+svn co -q %svnUrl%
+
+@REM calcul des logs
+echo Etape 3/5 : calcul des logs
+cd %premierRepertoire%
+svn log -v -q --xml >..\..\logSvn.log
+
+@REM création du rapport
+echo Etape 4/5 : creation du rapport
+cd..
+cd..
+cd rapports
+java -jar ..\..\statsvn.jar ..\logSvn.log ..\sources\%premierRepertoire% >..\logRapports.log
+
+@REM fin
+echo Etape 5/5 : fin
+cd..
+cd..
+```
