@@ -9,7 +9,6 @@ Pour générer l'index permettant la recherche, il est nécessaire d'avoir insta
 Pour cela, télécharger NodeJS depuis le site http://blog.teamtreehouse.com/install-node-js-npm-windows
 Puis ouvrir une fenêtre de commande dans le répertoire contenant le fichier package.json
 Pour installer l'outil d'indexation, exécuter la commande "npm install"
-Pour démarrer l'indexation, exécuter le script "bin\indexation.cmd"
 
 # Pour vérifier qu'aucun lien n'est cassé #
 L'outil "broken-link-checker" permet de vérifier que tous les liens du site fonctionnent.
