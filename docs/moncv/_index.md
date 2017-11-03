@@ -27,7 +27,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 			<br/>Mise à jour de plusieurs formations et création de 2 nouvelles formations Java (Hibernate avancé et Tests unitaires avancés)
 			<hr/>
 			<i class="fa fa-group"> 1 ETP (grande autonomie)</i>
-			<br/><time>De mai 2015 à aujourd'hui</time>
+			<br/><time>De mai 2015 à novembre 2017</time>
 		</li>
 		<li class="timeline-item inverted">
 			<h3>Référent technique</h3>
