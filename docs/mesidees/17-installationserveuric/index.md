@@ -10,7 +10,10 @@ weight: 117
 #### Création de la machine :
 
 Créer une machine de type *small* chez Amazon EC2 avec l'OS Ubuntu 17.04 AMD64 (image *AMI : ubuntu/images/hvm-ssd/ubuntu-zesty-17.04-amd64-server-20170720*).
+
 Dans le groupe de sécurité, ouvrir les ports HTTP HTTPS SSH (ouverts à tous)
+
+Modification en janvier 2018 : *medium* avec l'image *AMI ubuntu/images/hvm-ssd/ubuntu-artful-17.10-amd64-server-20180102*
 
 #### Mise à jour de la plateforme :
 Se connecter en SSH et exécuter
@@ -38,7 +41,7 @@ sudo a2enmod headers
 sudo a2enmod ssl
 ```
 
-Créer le fichier */etc/apache2/sites-available/monHttp.conf*
+Créer le fichier */etc/apache2/sites-available/monHttp.conf* (ne pas oublier le sudo)
 ```
 <VirtualHost *:80>
  ServerAdmin webmaster@localhost
@@ -78,8 +81,6 @@ Order deny,allow
 Allow from all
 </Proxy>
 ProxyPreserveHost on
-ProxyPass /monMariage http://localhost:9090/monMariage
-ProxyPassReverse /monMariage http://locahost:9090/monMariage
 ProxyPass /jenkins http://localhost:8080/jenkins nocanon
 ProxyPassReverse /jenkins http://locahost:8080/jenkins
 ProxyPassReverse /jenkins  http://me.guillaumetalbot.com/jenkins
@@ -111,10 +112,10 @@ Créer le fichier /var/www/html/index.html avec le contenu suivant :
 <html>
  <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=https://me.guillaumetalbot.com/monMariage/login.html" />
+  <meta http-equiv="refresh" content="3; url=https://talbotgui.github.io" />
  </head>
  <body>
-  Redirection en cours
+  Redirection en cours...
  </body>
 </html>
 ```
@@ -128,7 +129,7 @@ sudo apt-get install postfix
 sudo vi /etc/postfix/main.cf
   myhostname = guillaumetalbot.com
 sudo vi /etc/postfix/virtual
-  webmaster@ec2-52-49-145-20.eu-west-1.compute.amazonaws.com ubuntu
+  webmaster@guillaumetalbot.com ubuntu
 sudo postmap /etc/postfix/virtual
 sudo service postfix restart
 ```
@@ -139,13 +140,13 @@ Modifier le fichier /usr/share/maven/conf/settings.xml pour définir le repo loc
 
 #### Installation NPM & NodeJS
 ```ssh
-curl -sL https://deb.nodesource.com/setup_7.x | sudo bash -
-sudo apt-get install nodejs
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 #### Installation de Chrome :
 ```ssh
-sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install google-chrome-stable
