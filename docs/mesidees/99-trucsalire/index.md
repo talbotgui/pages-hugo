@@ -1,6 +1,6 @@
 ---
 title: Trucs à lire
-prev: /mesidees/22-elastic/
+prev: /mesidees/23-gitetclefssshmultiples/
 next: /mesprojets/
 
 weight: 199

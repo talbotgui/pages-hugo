@@ -1,7 +1,7 @@
 ---
 title: Stack Elastic
 prev: /mesidees/21-jenkins/
-next: /mesidees/99-trucsalire/
+next: /mesidees/23-gitetclefssshmultiples/
 
 weight: 122
 ---

@@ -17,11 +17,11 @@ Modification en janvier 2018 : *medium* avec l'image *AMI ubuntu/images/hvm-ssd/
 
 #### Mise à jour de la plateforme :
 Se connecter en SSH et exécuter
-```ssh sudo apt-get update
+```sudo apt-get update
 sudo apt-get upgrade```
 
 #### Installation de Java et Jenkins :
-```ssh	
+```
 sudo apt-get install default-jdk
 	
 @see http://pkg.jenkins-ci.org/debian/
@@ -31,10 +31,10 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
  
-Pour définir le rootContext de Jenkins, exécuter ```ssh sudo vi /etc/default/jenkins``` et modifier la dernière ligne pour ajouter "--prefix=$PREFIX"
+Pour définir le rootContext de Jenkins, exécuter ```sudo vi /etc/default/jenkins``` et modifier la dernière ligne pour ajouter "--prefix=$PREFIX"
 
 #### Installation apache2
-```ssh
+```
 sudo apt-get install apache2
 sudo a2enmod proxy proxy_http
 sudo a2enmod headers
@@ -50,7 +50,7 @@ Créer le fichier */etc/apache2/sites-available/monHttp.conf* (ne pas oublier le
 </VirtualHost>
 ```
 
-```ssh
+```
 sudo a2ensite monHttp
 sudo /etc/init.d/apache2 restart
 ```
@@ -59,7 +59,7 @@ sudo /etc/init.d/apache2 restart
 *@see https://certbot.eff.org/#ubuntutzesty-apache*
 
 **Penser à configurer le nom de domaine pour pointer sur la machine auprès du DNS**
-```ssh
+```
 sudo apt-get update
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:certbot/certbot
@@ -97,17 +97,16 @@ AllowEncodedSlashes NoDecode
  Header set Strict-Transport-Security "max-age=300; includeSubDomains; preload; always;"
  Header set Public-Key-Pins "pin-sha256=\"base64+primary==\"; pin-sha256=\"base64+backup==\"; max-age=5184000; includeSubDomains"
 </IfModule>
-
 ```
 
 Puis exécuter :
-```ssh
+```
 sudo /etc/init.d/apache2 restart
 sudo rm /var/www/html/index.html
 ```
 
 Créer le fichier /var/www/html/index.html avec le contenu suivant :
-```html
+```
 <!DOCTYPE html>
 <html>
  <head>
@@ -124,7 +123,7 @@ Créer le fichier /var/www/html/index.html avec le contenu suivant :
 Aller à l'adresse https://...../jenkins et suivre les instructions
 
 #### Installation email : 
-```ssh
+```
 sudo apt-get install postfix
 sudo vi /etc/postfix/main.cf
   myhostname = guillaumetalbot.com
@@ -135,17 +134,17 @@ sudo service postfix restart
 ```
 
 #### Installation Maven :
-```ssh sudo apt-get install maven```
+```sudo apt-get install maven```
 Modifier le fichier /usr/share/maven/conf/settings.xml pour définir le repo local sans oublier de créer le répertoire avec le droit à tous les utilisateurs (chmod a+w m2repo)
 
 #### Installation NPM & NodeJS
-```ssh
+```
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
 #### Installation de Chrome :
-```ssh
+```
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-get update
@@ -154,7 +153,7 @@ sudo apt-get install google-chrome-stable
 
 #### Si la machine est de type *tiny*
 La machine va manquer de RAM. Pour ajouter une partition de SWAP (dans un fichier) (http://tecadmin.net/add-swap-partition-on-ec2-linux-instance/)
-```ssh
+```
 dd if=/dev/zero of=/var/myswap bs=1M count=2048
 mkswap /var/myswap
 swapon /var/myswap
@@ -162,3 +161,17 @@ swapon /var/myswap
 
 #### Les répertoires à vider pour récupérer de l'espace :
 /var/lib/jenkins/.npm/_logs/
+
+
+#### Notes sur l'installation d'un Archiva
+Ressources :
+
+* documentation : https://archiva.apache.org/docs/2.2.3/quick-start.html
+* installation : http://apache.mirrors.nublue.co.uk/archiva/2.2.3/binaries/apache-archiva-2.2.3-bin.zip
+
+Installation :
+
+* extraire le contenu de l'archive
+* si Java9 est le JDK par défaut, modifier le fichier conf/wrapper.conf : ``` wrapper.java.command=C:/Program Files/Java/jdk1.8.0_151/bin/java ```
+* sous Windows, dans un interpréteur de commande en mode "Admin", exécuter ``` archiva install ``` puis ``` archiva start ```
+* Archiva sera disponible à l'adresse http://localhost:8080/

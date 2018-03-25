@@ -11,17 +11,17 @@ weight: 116
 **[Angular Cheat Sheet](https://angular.io/guide/cheatsheet)**
 
 Au besoin, pour réinstaller Angular/cli : 
-```ts npm install -g @angular/cli --no-optional```
+```npm install -g @angular/cli --no-optional```
 
 Dans une interpolation, pour naviguer sans risque, il suffit d'utiliser le Safe Navigation Operator ('?.').
-Exemple : ```ts unObjet?.unAttributPotentiellementUndefined```
+Exemple : ```unObjet?.unAttributPotentiellementUndefined```
 
 Two way binding :
 
- * ```ts [ngModel]="monAttribut"``` si la valeur change dans le JS, le DOM est mis à jour
- * ```ts (ngModel)="monAttribut"``` si le DOM change, la valeur du JS est mise à jour
+ * ```[ngModel]="monAttribut"``` si la valeur change dans le JS, le DOM est mis à jour
+ * ```(ngModel)="monAttribut"``` si le DOM change, la valeur du JS est mise à jour
 
-Exemple de binding : ```html <div [style.background-color]="getStyle()">```
+Exemple de binding : ```<div [style.background-color]="getStyle()">```
 
 Évènement : 
 
@@ -30,8 +30,8 @@ Exemple de binding : ```html <div [style.background-color]="getStyle()">```
 
 Dirty checking :
 
- * tout changement est pris en compte dans le composant : ```ts @Component {..., changeDetection: ChangeDetectionStrategy.Default, ...}``` => 
- * seul les @Input sont raffraichis : ```ts @Component {..., changeDetection: ChangeDetectionStrategy.OnPush,  ...}```
+ * tout changement est pris en compte dans le composant : ```@Component {..., changeDetection: ChangeDetectionStrategy.Default, ...}``` => 
+ * seul les @Input sont raffraichis : ```@Component {..., changeDetection: ChangeDetectionStrategy.OnPush,  ...}```
 
 Pipes :
 
@@ -50,14 +50,14 @@ Interfaces implémentables dans un composant : OnInit, AfterContentInit
 
 Exemple de directive : pour logger le clic sur tous un ensemble de boutons
 
- * ```html <button [track]="unBouton">coucou</button>```
- * ```ts @Directive({selector: '[track]'}) export class TrackDirective {
+ * ```<button [track]="unBouton">coucou</button>```
+ * ```@Directive({selector: '[track]'}) export class TrackDirective {
   @Input() track;
   @HostListener('click')
   onClick(){ console.log(this.track); }
 }```
 
-Pour faire des checkbox dans un *ngFor : ```html <div *ngFor="let aze of azes">
+Pour faire des checkbox dans un *ngFor : ```<div *ngFor="let aze of azes">
   <input [id]="aze", name="monChamp" ngModel [value]="aze" type="radio"></input>
   <label [attr.for]="aze">{{aze}}</label>
 </div>```
@@ -70,7 +70,7 @@ Validation de formulaire :
 
  * il faut un form avec les attributs ```novalidate``` et ```#toto="ngForm"```
  * l'attribut ```required``` sur les champs obligatoires
- * une div avec le message d'erreur (pristine = inchangé) : ```html <div [hidden]="inputNom.valid || inputNom.pristine" class="alert alert-danger">Le nom est obligatoire</div>```
+ * une div avec le message d'erreur (pristine = inchangé) : ```<div [hidden]="inputNom.valid || inputNom.pristine" class="alert alert-danger">Le nom est obligatoire</div>```
 
 Pour la validation des radios, c'est l'input qui est invalide et le label est à coté. Astuce CSS : ```css .ng-invalid + label:after { content:'sélectionne en un'; }```
 
@@ -95,9 +95,9 @@ Quelques liens :
 
 Quelques commandes :
 
- * Pour lancer les tests : ```sh ng test```
- * Pour lancer les tests avec couverture de code : ```sh ng test --code-coverage --reporters=coverage-istanbul```
- * Pour lancer les tests avec PhantomJS : ```sh ng test --config=karma-ic.conf.js```
+ * Pour lancer les tests : ```ng test```
+ * Pour lancer les tests avec couverture de code : ```ng test --code-coverage --reporters=coverage-istanbul```
+ * Pour lancer les tests avec PhantomJS : ```ng test --config=karma-ic.conf.js```
  
 Pour tester des XPath ou des sélecteurs CSS dans Chrome, il suffit d'utiliser $x('//div') ou $$('div.maClass') ([source](http://yizeng.me/2014/03/23/evaluate-and-validate-xpath-css-selectors-in-chrome-developer-tools/)).
 
@@ -109,5 +109,5 @@ Pour tester des XPath ou des sélecteurs CSS dans Chrome, il suffit d'utiliser $
 * [pour trouver un type] (http://microsoft.github.io/TypeSearch/)
 
 #### Quelques commandes NPM utiles :
-* pour lister les versions d'un package : ```ssh npm show monPackage@* version```
-* pour lister les packages qui ne sont pas en dernière version : ```ssh npm outdated```
+* pour lister les versions d'un package : ```npm show monPackage@* version```
+* pour lister les packages qui ne sont pas en dernière version : ```npm outdated```
