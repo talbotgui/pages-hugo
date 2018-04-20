@@ -1,6 +1,6 @@
 ---
 title: Trucs à lire
-prev: /mesidees/23-gitetclefssshmultiples/
+prev: /mesidees/24-sftpaws/
 next: /mesprojets/
 
 weight: 199
