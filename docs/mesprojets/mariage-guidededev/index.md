@@ -1,9 +1,6 @@
 ---
 title: Mariage - Guide du développeur
-prev: /mesprojets/
-next: /mesprojets/bulletin-guidededev/
 weight: 201
-
 ---
 
 Cette page est un court guide du développeur ([ma définition du guide du développeur](/mesidees/10-guidedudev/)) pour mon projet [Mariage] (https://github.com/talbotgui/mariage).

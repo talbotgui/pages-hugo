@@ -1,9 +1,6 @@
 ---
 title: Création d'un site avec Hugo
-prev: /mesidees/07-hugoetgithubpages/
-next: /mesidees/09-objectmother/
 weight: 108
-
 ---
 ## La structure
 

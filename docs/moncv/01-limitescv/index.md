@@ -1,8 +1,5 @@
 ---
 title: Les limites d'un CV
-prev: /moncv/
-next: /mesidees/
-
 weight: 301
 ---
 

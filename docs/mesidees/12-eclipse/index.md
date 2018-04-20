@@ -1,8 +1,5 @@
 ---
 title: Eclipse
-prev: /mesidees/11-programmationdefensive/
-next: /mesidees/13-pipeline/
-
 weight: 112
 ---
 

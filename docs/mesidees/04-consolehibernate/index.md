@@ -1,9 +1,6 @@
 ---
 title: Créer une console Hibernate
-prev: /mesidees/03-testsdedeveloppement/
-next: /mesidees/05-retryenjava/
 weight: 104
-
 ---
 
 Créer une console Hibernate (JBoss Tools) sur un projet SpringBoot+JPA utilisant une HSQLDB

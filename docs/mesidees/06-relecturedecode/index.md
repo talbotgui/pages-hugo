@@ -1,9 +1,6 @@
 ---
 title: Relecture, revue et audit de code
-prev: /mesidees/05-retryenjava/
-next: /mesidees/07-hugoetgithubpages/
 weight: 106
-
 ---
 
 #### Ma définition

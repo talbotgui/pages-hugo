@@ -1,8 +1,5 @@
 ---
 title: Créer un compte sftp sur AWS
-prev: /mesidees/23-gitetclefssshmultiples/
-next: /mesidees/25-featuretoggle/
-
 weight: 124
 ---
 

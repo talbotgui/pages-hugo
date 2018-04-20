@@ -1,9 +1,6 @@
 ---
 title: Dette technique
-prev: /mesidees/
-next: /mesidees/02-pratiques/
 weight: 101
-
 ---
 
 #### Définitions sur le net

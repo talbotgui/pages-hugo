@@ -1,7 +1,5 @@
 ---
 title: Mes projets
-prev: /mesidees/99-trucsalire/
-next: /mesprojets/mariage-guidededev/
 weight: 200
 chapter: true
 ---

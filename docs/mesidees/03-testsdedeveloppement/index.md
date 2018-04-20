@@ -1,9 +1,6 @@
 ---
 title: Tests de développement
-prev: /mesidees/02-pratiques/
-next: /mesidees/04-consolehibernate/
 weight: 103
-
 ---
 
 

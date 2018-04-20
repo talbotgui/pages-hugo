@@ -1,7 +1,5 @@
 ---
 title: Mes idées
-prev: /moncv/
-next: /mesidees/01-dettetechnique/
 weight: 100
 chapter: true
 ---

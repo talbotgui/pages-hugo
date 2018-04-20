@@ -1,9 +1,6 @@
 ---
 title: Liens sur des pratiques utiles
-prev: /mesidees/01-dettetechnique/
-next: /mesidees/03-testsdedeveloppement/
 weight: 102
-
 ---
 
 ### Pratiques de développement :

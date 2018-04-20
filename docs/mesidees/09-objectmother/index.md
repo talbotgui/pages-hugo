@@ -1,8 +1,5 @@
 ---
 title: Object Mother
-prev: /mesidees/08-creationavechugo/
-next: /mesidees/10-guidedudev/
-
 weight: 109
 ---
 

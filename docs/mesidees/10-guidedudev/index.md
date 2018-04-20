@@ -1,8 +1,5 @@
 ---
 title: Guide Du Développeur
-prev: /mesidees/09-objectmother/
-next: /mesidees/11-programmationdefensive/
-
 weight: 110
 ---
 

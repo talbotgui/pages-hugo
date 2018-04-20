@@ -1,8 +1,5 @@
 ---
 title: Feature toggle
-prev: /mesidees/24-sftpaws/
-next: /mesidees/99-trucsalire/
-
 weight: 125
 ---
 

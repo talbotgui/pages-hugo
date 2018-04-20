@@ -1,8 +1,5 @@
 ---
 title: Git et clefs SSH multiples
-prev: /mesidees/22-elastic/
-next: /mesidees/24-sftpaws/
-
 weight: 123
 ---
 

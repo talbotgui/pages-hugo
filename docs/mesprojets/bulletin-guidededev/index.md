@@ -1,9 +1,6 @@
 ---
 title: Bulletin NG - Guide du développeur
-prev: /mesprojets/mariage-guidededev/
-next: /moncv/
 weight: 201
-
 ---
 
 Cette page est mini guide du développeur ([ma définition du guide du développeur](/mesidees/10-guidedudev/)) pour le projet [BulletinNg] (https://github.com/talbotgui/bulletin-ng).

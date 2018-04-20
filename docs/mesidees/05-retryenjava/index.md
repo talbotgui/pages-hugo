@@ -1,9 +1,6 @@
 ---
 title: Coder des ré-essais en Java
-prev: /mesidees/04-consolehibernate/
-next: /mesidees/06-relecturedecode/
 weight: 105
-
 ---
 
 La librairie **guava-retrying** est assez pratique pour définir des méthodes à réessayer en cas d'échec.

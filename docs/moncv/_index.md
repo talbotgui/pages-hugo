@@ -1,10 +1,6 @@
 ---
 title: Mon CV
-prev: /mesprojets/mariage-guidededev/
-next: /moncv/01-limitescv/
-
 weight: 300
-
 ---
 Produire. C'est ma drogue. Produire du code, des documents de formation ou un billet de blog. Mais produire.
 

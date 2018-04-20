@@ -1,8 +1,5 @@
 ---
 title: Jenkins
-prev: /mesidees/20-gitflow/
-next: /mesidees/22-elastic/
-
 weight: 121
 ---
 

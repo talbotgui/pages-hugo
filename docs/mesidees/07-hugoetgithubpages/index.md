@@ -1,9 +1,6 @@
 ---
 title: Hugo et GitHub:Pages
-prev: /mesidees/05-retryenjava/
-next: /mesidees/08-creationavechugo/
 weight: 107
-
 ---
 
 ## Démarrage

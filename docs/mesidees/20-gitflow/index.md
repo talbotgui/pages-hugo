@@ -1,8 +1,5 @@
 ---
 title: les différents FLOW avec Git
-prev: /mesidees/19-git/
-next: /mesidees/21-jenkins/
-
 weight: 120
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: Installation d'un serveur pour une Integration Continue
-prev: /mesidees/16-angular/
-next: /mesidees/18-licences/
-
 weight: 117
 ---
 
