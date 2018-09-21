@@ -172,3 +172,18 @@ Installation :
 * si Java9 est le JDK par défaut, modifier le fichier conf/wrapper.conf : ``` wrapper.java.command=C:/Program Files/Java/jdk1.8.0_151/bin/java ```
 * sous Windows, dans un interpréteur de commande en mode "Admin", exécuter ``` archiva install ``` puis ``` archiva start ```
 * Archiva sera disponible à l'adresse http://localhost:8080/
+
+#### Petites commandes pratiques pour entretenir le serveur :
+
+Pour rechercher les répertoires prenant de la place : ```sudo du -cha --max-depth=1 / | grep -E "[0-9]M|[0-9]G"```
+
+Et un petit script permettant de faire le ménage régulièrement :
+```
+apt clean all
+rm /var/log/**/*.gz
+rm /var/log/journal/*/*-00000*.journal
+rm -rf /var/lib/jenkins/workspace/*
+rm -rf /var/lib/jenkins/.sonar/*
+rm -rf /var/lib/jenkins/.m2/*
+rm -rf /var/lib/jenkins/.npm/*
+```

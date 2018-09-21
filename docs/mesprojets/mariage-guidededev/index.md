@@ -1,6 +1,6 @@
 ---
 title: Mariage - Guide du développeur
-weight: 201
+weight: 202
 ---
 
 Cette page est un court guide du développeur ([ma définition du guide du développeur](/mesidees/10-guidedudev/)) pour mon projet [Mariage] (https://github.com/talbotgui/mariage).
@@ -204,7 +204,7 @@ Le pipeline est lui aussi en GCL : dans le *JenkinsFile*
 Le pipeline commence au commit du code et enchaîne les étapes suivantes : compilation, tests métiers, tests des contrôleurs, packaging, tests IHM, qualimétrie, promotion manuelle et mise en production
 
 
-Sujets non traités ici (pour le moment) :
+Sujets non traités ici (le projet est terminé, ce guide n'évoluera plus) :
 
 * conception
  * quels sont les outils de conception et/ou de modélisation ?
@@ -224,8 +224,3 @@ Sujets non traités ici (pour le moment) :
  * IC = jenkins toujours à jour avec un pipelineAsCode (lien vers le blog sur le sujet)
  * pipeline = git/compile/TU/TI/TA/qualimétrie/promotion/production
  * à quand un second développeur et la mise en place des pullrequest et des revues de code ?
-* roadmap :
- * thymeleaf ?
- * angular ?
- * tag à la promotion (fin du développement au fil de l'eau et passage en mode paquet de code)
- * ...
