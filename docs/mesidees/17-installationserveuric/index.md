@@ -187,3 +187,15 @@ rm -rf /var/lib/jenkins/.sonar/*
 rm -rf /var/lib/jenkins/.m2/*
 rm -rf /var/lib/jenkins/.npm/*
 ```
+
+#### Installation du Cloud SDK
+
+* documentation : https://cloud.google.com/sdk/docs/downloads-apt-get
+
+Installation :
+```
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install google-cloud-sdk
+```
