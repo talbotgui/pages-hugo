@@ -16,7 +16,7 @@ On ne se refait pas... Mais on peut s'améliorer.
 .timeline-item h3 { font-size: 20px; }
 </style>
 <div class="timeline">
-	<h2>2017</h2>
+	<h2>2019</h2>
 	<ul class="timeline-items">
 		<li class="timeline-item">
 			<h3>Formateur et référent de formations, référent technique et architecte</h3>
@@ -33,7 +33,9 @@ On ne se refait pas... Mais on peut s'améliorer.
 			<i class="fa fa-group">jusqu'à 3 ETP</i>
 			<br/><time>De décembre 2017 à aujourd'hui</time>
 		</li>
-
+	</ul>
+	<h2>2017</h2>
+	<ul class="timeline-items">
 		<li class="timeline-item">
 			<h3>Formateur et référent de formations</h3>
 			<hr/>
