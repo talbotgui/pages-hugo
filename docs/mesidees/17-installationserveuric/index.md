@@ -199,3 +199,11 @@ echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install google-cloud-sdk
 ```
+
+Connexion :
+
+* créer une clef depuis la console GCloud (IAM / comptes de service)
+* activer les APIs "Cloud Resource Manager API" et "App Engine Admin API" depuis la console GCloud (API / Bibliotheque)
+* déposer le fichier JSON sur le serveur
+* se connecter une première fois avec ```gcloud auth activate-service-account --key-file=LE_FICHIER_JSON```
+* exécuter la commande ```gcloud init``` et renseigner toutes les informations

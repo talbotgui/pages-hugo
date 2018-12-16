@@ -27,6 +27,7 @@ L'objectif de l'application blanche est de fournir un exemple d'application (ré
   * [Langue] (#langue)
   * [Nommage] (#nommage)
   * [Mise en forme des sources] (#mise-en-forme-des-sources)
+  * [Spring Data] (#spring-data)
   * [HQL] (#hql)
   * [Angular] (#angular)
   * [VueJS] (#vuejs)
@@ -35,6 +36,7 @@ L'objectif de l'application blanche est de fournir un exemple d'application (ré
   * [Commit] (#commit)
   * [Industrialisation] (#industrialisation)
 * [Installation des environnements] (#Installation-des-environnements)
+* [FAQ] {#faq}
 
 ## Exigences
 Le fichier "todoList.txt" présent à la racine de la branche *master* contient une backlog.
@@ -154,6 +156,15 @@ Toujours définir par défaut l'attribut READ_ONLY à *true* sur une méthode ch
 Ne jamais créer un lien entre deux entités en instanciant une entité et ne définissant que son ID. Toujours utiliser *EntityManager.getReference*
 La gestion des transactions est faite via les annotations Spring. Les exceptions du projet sont *runtime* et déclenchent donc le rollback. Seuls les composants de type "Service" et "DAO" peuvent être transactionnels (par les "contrôleur")
 
+#### Spring Data
+Les requêtes sont, pour la quasi totalité d'entre elles, positionnées dans un Repository Spring Data. Elles sont donc dans les annotations d'une interface et non dans une classe.
+L'usage de méthode *default* est interdit sur mon projet. Si je dois coder un algorithme, il doit être dans le service. Si la requête est complèxe (multi-critères optionnels par exemple), il faut créer une classe à part.
+
+Astuces et penses-bêtes :
+
+* ne jamais mettre de clause *order by* dans une requête si la requête est paginée (usage d'un paramètre de type org.springframework.data.domain.Pageable)
+* toujours définir la requête *countQuery* d'une requête paginée si la requête contient un *join fetch*
+
 #### REST
 Les méthodes de contrôleur REST retournant uniquement une chaine de caractères doivent retourner la dite chaine entre *double quote*.
 
@@ -217,3 +228,8 @@ Sujets non traités ici (pour le moment) :
 * roadmap :
  * tag à la promotion (fin du développement au fil de l'eau et passage en mode paquet de code)
  * ...
+
+## FAQ
+
+* Erreur de sérialisation d'un attribut @OneToMany dans Jackson à cause d'une LazyInitializationException
+ * Utiliser la méthode MutableUtil.getMutable dans le getter

@@ -11,9 +11,29 @@ On ne se refait pas... Mais on peut s'améliorer.
 {{< highlight html >}}
 <link rel="stylesheet" type="text/css" href="/jquery-timelify/timelify.css"/>
 <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<style>
+.timeline { font-size: 14px; }
+.timeline-item h3 { font-size: 20px; }
+</style>
 <div class="timeline">
 	<h2>2017</h2>
 	<ul class="timeline-items">
+		<li class="timeline-item">
+			<h3>Formateur et référent de formations, référent technique et architecte</h3>
+			<hr/>
+			Pour CGI, je participe à la vie du centre de service d'Amiens :
+			<ul>
+				<li>animation/création/maintien de formation Java</li>
+				<li>architecte pour des projets de création d'application pour plusieurs clients parisiens à l'échelle nationnale</li>
+				<li>référent technique pour les équipes de développement de ces mêmes projets</li>
+				<li>architecte pour les avant-ventes réalisée par les équipes aménoises en collaboration avec les équipes commerciales parisiennes et lilloises</li>
+			</ul>
+			Contexte technique : <i>Java, Spring (boot/data/...), Angular, Tomcat, AppEngine, PostgreSQL</i>
+			<hr/>
+			<i class="fa fa-group">jusqu'à 3 ETP</i>
+			<br/><time>De décembre 2017 à aujourd'hui</time>
+		</li>
+
 		<li class="timeline-item">
 			<h3>Formateur et référent de formations</h3>
 			<hr/>
