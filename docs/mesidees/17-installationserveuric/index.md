@@ -65,6 +65,12 @@ sudo apt-get install python-certbot-apache
 sudo certbot --apache
 ```
 
+#### Limiter les informations fournies par le serveur
+Modifier le fichier /etc/apache2/conf-available/security et changer les valeurs :
+
+* ServerTokens Prod
+* ServerSignature Off
+
 #### Activer les accès sécurisés aux outils :
 Modifier le fichier /etc/apache2/sites-available/monHttp-le-ssl.conf et y ajouter
 ```
