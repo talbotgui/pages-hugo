@@ -6,11 +6,9 @@ weight: 117
 
 #### Création de la machine :
 
-Créer une machine de type *small* chez Amazon EC2 avec l'OS Ubuntu 17.04 AMD64 (image *AMI : ubuntu/images/hvm-ssd/ubuntu-zesty-17.04-amd64-server-20170720*).
+Créer une machine de type *small* chez Amazon EC2 avec l'OS Ubuntu xx.xx de votre choix.
 
 Dans le groupe de sécurité, ouvrir les ports HTTP HTTPS SSH (ouverts à tous)
-
-Modification en janvier 2018 : *medium* avec l'image *AMI ubuntu/images/hvm-ssd/ubuntu-artful-17.10-amd64-server-20180102*
 
 #### Mise à jour de la plateforme :
 Se connecter en SSH et exécuter
@@ -28,7 +26,9 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
  
-Pour définir le rootContext de Jenkins, exécuter ```sudo vi /etc/default/jenkins``` et modifier la dernière ligne pour ajouter "--prefix=$PREFIX"
+Pour définir le rootContext de Jenkins, exécuter ```sudo vi /etc/default/jenkins``` et modifier la dernière ligne pour ajouter "--prefix=$PREFIX" (attention au double tirets)
+
+Pour prendre en compte la modification, redémarrer Jenkins
 
 #### Installation apache2
 ```
@@ -53,7 +53,7 @@ sudo /etc/init.d/apache2 restart
 ```
 
 #### Installation LetsEncrypt
-*@see https://certbot.eff.org/#ubuntutzesty-apache*
+*@see https://certbot.eff.org et sélectionner Apache et le bon OS*
 
 **Penser à configurer le nom de domaine pour pointer sur la machine auprès du DNS**
 ```
@@ -66,7 +66,7 @@ sudo certbot --apache
 ```
 
 #### Limiter les informations fournies par le serveur
-Modifier le fichier /etc/apache2/conf-available/security et changer les valeurs :
+Modifier le fichier /etc/apache2/conf-available/security.conf et changer les valeurs :
 
 * ServerTokens Prod
 * ServerSignature Off
@@ -141,8 +141,9 @@ sudo service postfix restart
 Modifier le fichier /usr/share/maven/conf/settings.xml pour définir le repo local sans oublier de créer le répertoire avec le droit à tous les utilisateurs (chmod a+w m2repo)
 
 #### Installation NPM & NodeJS
+Vérifier la dernière version disponible du setup et remplacer les YY (version 12 en juin 2019).
 ```
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_YY.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -157,9 +158,10 @@ sudo apt-get install google-chrome-stable
 #### Si la machine est de type *tiny*
 La machine va manquer de RAM. Pour ajouter une partition de SWAP (dans un fichier) (http://tecadmin.net/add-swap-partition-on-ec2-linux-instance/)
 ```
-dd if=/dev/zero of=/var/myswap bs=1M count=2048
-mkswap /var/myswap
-swapon /var/myswap
+sudo dd if=/dev/zero of=/var/myswap bs=1M count=2048
+sudo mkswap /var/myswap
+sudo swapon /var/myswap
+sudo chmod 0644 /var/myswap
 ```
 
 #### Les répertoires à vider pour récupérer de l'espace :
